@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mac-calculator/static/css/main.7ac72221.css",
+    "main.js": "/mac-calculator/static/js/main.530bdc01.js",
+    "index.html": "/mac-calculator/index.html",
+    "main.7ac72221.css.map": "/mac-calculator/static/css/main.7ac72221.css.map",
+    "main.530bdc01.js.map": "/mac-calculator/static/js/main.530bdc01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ac72221.css",
+    "static/js/main.530bdc01.js"
+  ]
+}
