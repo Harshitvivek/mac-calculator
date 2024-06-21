@@ -1,0 +1,181 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #f4fefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.screen {
+  height: 4rem;
+  margin-bottom: 4rem;
+
+}
+
+.wrapper {
+  background: #414141;
+  width: 80rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgba(0,0,0,0.1);
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.4% 0.3%;
+}
+
+.button {
+  background: #555555;
+  height: 3.5rem;
+  padding: 2%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  border: 2px dotted #242424;
+}
+
+.zeros {
+  grid-column: 7/9;
+}
+
+.opt {
+  background: #f79505;
+}
+
+ */
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #f4fefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.screen {
+  height: 4rem;
+  margin-bottom: 2rem; /* Adjust margin for smaller screens */
+}
+
+.wrapper {
+  background: #414141;
+  max-width: 80rem;
+  width: 100%; /* Set maximum width and make it responsive */
+  padding: 1rem;
+  margin-top: 2rem; /* Adjust margin for smaller screens */
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgba(0,0,0,0.1);
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.4rem 0.3rem; /* Adjust gap between grid items */
+}
+
+.button {
+  background: #555555;
+  height: 3.5rem;
+  /*padding: 2%; /* Adjust padding for smaller screens */
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  border: 2px dotted #242424;
+}
+
+.zeros {
+  grid-column: 7/9;
+}
+
+.opt {
+  background: #f79505;
+}
+.num{
+  background: #72736e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .wrapper {
+    max-width: 70rem; /* Adjust maximum width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 90%; /* Adjust maximum width for smaller tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 95%; /* Adjust maximum width for mobile devices */
+  }
+
+  .button {
+    height: 3rem; /* Adjust button height for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+@media (max-width: 450px) {
+  .screen {
+    height: 2.5rem; /* Further reduced screen height for very small screens */
+  }
+
+  .wrapper {
+    padding: 0.3rem; /* Further reduced padding for very small screens */
+    margin-top: 0.3rem; /* Further reduced margin for very small screens */
+  }
+
+  .buttonBox {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for buttons on very small screens */
+  }
+
+  .button {
+    height: 2.5rem; /* Further reduced button height for very small screens */
+    font-size: 0.9rem; /* Further reduced font size for very small screens */
+  }
+}
+
